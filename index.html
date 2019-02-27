@@ -41,6 +41,9 @@
         color: white;
         text-align: center;
     }
+    .post-overlay p{
+        position: relative;
+    }
     .post:hover .post-overlay{
         display: flex;
     }
@@ -51,6 +54,21 @@
         font-weight: bold;
         text-align: center;
         display: inline-block;
+        position: relative;
+    }
+    .post-likes::before{
+        content: url(images/heart-32.png);
+        margin: 5px;
+        position:absolute;
+        top: -9px;
+        left: -5px;
+    }
+    .post-comments::before{
+        content: url(images/comment-24.png);
+        margin: 5px;
+        position:absolute;
+        top: -10px;
+        left: -5px;
     }
     @media screen and (max-width: 768px){
         .post-list{
