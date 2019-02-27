@@ -57,18 +57,27 @@
         position: relative;
     }
     .post-likes::before{
-        content: url(images/heart-32.png);
+        content: ' ';
+        background-image: url('images/heart.svg');
         margin: 5px;
-        position:absolute;
-        top: -9px;
-        left: -5px;
-    }
-    .post-comments::before{
-        content: url(images/comment-24.png);
-        margin: 5px;
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
         position:absolute;
         top: -10px;
-        left: -5px;
+        left: -9px;
+    }
+    .post-comments::before{
+        content: ' ';
+        background-image: url('images/comment.svg');
+        margin: 5px;
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
+        position:absolute;
+        top: -8px;
+        left: -10px;
+        width:28px;
     }
     @media screen and (max-width: 768px){
         .post-list{
